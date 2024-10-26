@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Chess Clock</string>
+    <string name="_10_00">10:00</string>
+    <string name="settings">settings</string>
+    <string name="playandpause">playandpause</string>
+    <string name="resetclock">resetClock</string>
+    <string name="playandpauseclock">playAndPauseClock</string>
+    <string name="clocksettings">clockSettings</string>
+    <string name="moves_0">Moves: 0</string>
+    <string name="Moves">Moves: </string>
+    <string name="custom_time">CUSTOM TIME</string>
+    <string name="_5_sec"> 5 sec</string>
+    <string name="_1_min">1 min</string>
+    <string name="_1_min_1_sec">1 min | 1 sec</string>
+    <string name="presets">Presets</string>
+    <string name="time_controls">Time Controls</string>
+    <string name="_2_min_1_sec">2 min | 1 sec</string>
+    <string name="_3_min">3 min</string>
+    <string name="_1_1">1  |  1</string>
+    <string name="_2_1">2  |  1</string>
+    <string name="_2_min">2 min</string>
+    <string name="_3_2">3  |  2</string>
+    <string name="_5_min">5 min</string>
+    <string name="_5_3">5  |  3</string>
+    <string name="_10_min">10 min</string>
+    <string name="_10_5">10  |  5</string>
+    <string name="_15_10">15  |  10</string>
+    <string name="_30_min">30 min</string>
+    <string name="_30_20">30  |  20</string>
+    <string name="_30_sec">30 sec</string>
+    <string name="play">PLAY</string>
+</resources>

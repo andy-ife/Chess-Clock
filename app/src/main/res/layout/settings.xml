@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="#252525">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A1A1A"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_controls"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_slab"/>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/presets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleBar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/presets"
+        android:textColor="#878787"
+        android:fontFamily="@font/roboto_slab"
+        android:layout_margin="10dp"
+        android:textSize="12sp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/presets"
+        app:layout_constraintBottom_toTopOf="@id/startGameButton"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:fadeScrollbars="true">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/fiveSec"
+                android:contentDescription="5000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_5_sec"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/thirtySec"
+                android:contentDescription="30000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_30_sec"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/oneMinute"
+                android:contentDescription="60000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_1_min"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/twoMinute"
+                android:contentDescription="120000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_2_min"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/twoMinuteOneSec"
+                android:contentDescription="120000+1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_2_1"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/threeMinute"
+                android:contentDescription="180000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_3_min"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/threeMinuteTwoSec"
+                android:contentDescription="180000+2000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_3_2"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/fiveMinute"
+                android:contentDescription="300000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_5_min"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/fiveMinuteThreeSec"
+                android:contentDescription="300000+3000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_5_3"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/tenMinute"
+                android:contentDescription="600000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_10_min"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/tenMinuteFiveSec"
+                android:contentDescription="600000+5000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_10_5"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/fifteenMinuteTenSec"
+                android:contentDescription="900000+10000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_15_10"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/thirtyMinute"
+                android:contentDescription="1800000+0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_30_min"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/thirtyMinuteTwentySec"
+                android:contentDescription="1800000+20000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/_30_20"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginVertical="5dp"
+                android:buttonTint="#606060"/>
+
+            </RadioGroup>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:text="@string/play"
+        android:fontFamily="@font/roboto_slab"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#0091A0"
+        android:letterSpacing="0.1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
