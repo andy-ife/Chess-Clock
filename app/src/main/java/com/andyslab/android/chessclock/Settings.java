@@ -32,7 +32,6 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.settings);
 
         radioGroup = findViewById(R.id.radioGroup);
-        customTimeButton = findViewById(R.id.customTimeButton);
         startGameButton = findViewById(R.id.startGameButton);
 
         loadPrevCheckedButton();
